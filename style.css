@@ -1,0 +1,97 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  color: #f0f0f0;
+}
+
+.container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+  width: 340px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+#display {
+  font-size: 2.5rem;
+  margin: 20px 0;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.buttons button {
+  flex: 1 1 45%;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  color: #fff;
+}
+
+#start {
+  background: #26a69a;
+}
+
+#pause {
+  background: #ffb300;
+}
+
+#reset {
+  background: #ef5350;
+}
+
+#lap {
+  background: #5c6bc0;
+}
+
+.buttons button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.laps-section {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.laps-section h2 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+#laps {
+  padding: 0;
+  list-style: none;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+#laps li {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 6px 10px;
+  margin: 5px 0;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  color: #ddd;
+}
